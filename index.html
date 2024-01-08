@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Chlamydia & Gonorrhea</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="../images/logo.svg" alt=""></div>
+        <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+        <a href=".#"><button class="sec-btn">Sign out</button></a>
+        </div>
+    </nav>
+    <section> 
+        <div class="casses">
+            <nav class="col-3">
+                <ul>
+                    <li><a href="#"><button class="li-btn"> Register New Client  </button> </a></li>
+                    <h3>Case Forms</h3>
+                    <li><a href="#"><button class="li-btn"> Personal Information </button> </a></li>
+                    <li><a href="#"><button class="li-btn"> Risk Factor </button> </a></li>
+                    <li><a href="#"><button class="li-btn"> Hepatitis B </button> </a></li>
+                    <li><a href="#"><button class="li-btn"> Congenital Syphilis </button> </a></li>
+                    <li><a href="#"><button class="li-btn"> Chlamydia & Gonorrhea </button> </a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="col-9">
+            <form action="#" method="post">
+                <h4>Chlamydia and Gonorrhea Form</h4>
+                <label for="patient_name">Patient Name:</label>
+                <input type="text" id="patient_name" name="patient_name" required>
+        
+                <label for="patient_age">Patient Age:</label>
+                <input type="number" id="patient_age" name="patient_age" required>
+        
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+        
+                <label for="home_address">Home Address:</label>
+                <input type="text" id="home_address" name="home_address">
+        
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number">
+        
+                <label for="pregnancy_test_results">Pregnancy Test Results:</label>
+                <select id="pregnancy_test_results" name="pregnancy_test_results">
+                    <option value="na">N/A</option>
+                    <option value="negative">Negative</option>
+                    <option value="unknown">Unknown</option>
+                    <option value="positive">Positive</option>
+                </select><br><br>
+
+                <label for="pregnancy_weeks">If positive, how many weeks?</label>
+                <input type="number" id="pregnancy_weeks" name="pregnancy_weeks" min="1">
+        
+                <label for="reason_for_exam">Reason for Exam:</label>
+
+                <span><input class="chkbx" type="checkbox" id="symptomatic" name="reason_for_exam" value="symptomatic">
+                <label for="symptomatic">Symptomatic</label></span>
+
+                <span><input class="chkbx" type="checkbox" id="routine_exam" name="reason_for_exam" value="routine_exam">
+                <label for="routine_exam">Routine Exam</label></span>
+
+                <span><input class="chkbx" type="checkbox" id="test_for_cure" name="reason_for_exam" value="test_for_cure">
+                <label for="test_for_cure">Test for Cure</label></span>
+
+                <span><input class="chkbx" type="checkbox" id="exposed_to_infection" name="reason_for_exam" value="exposed_to_infection">
+                <label for="exposed_to_infection">Exposed to Infection</label></span>
+
+                <span><input class="chkbx" type="checkbox" id="pregnant" name="reason_for_exam" value="pregnant">
+                <label for="pregnant">Pregnant</label></span><br>
+        
+                <label for="test_date">Date of Test:</label>
+                <input type="date" id="test_date" name="test_date" required><br><br>
+        
+                <label for="test_result">Test Result:</label>
+                <select id="test_result" name="test_result" required>
+                    <option value="na">N/A</option>
+                    <option value="positive">Positive</option>
+                    <option value="negative">Negative</option>
+                </select><br><br>
+        
+                <label for="additional_comments">Additional Comments:</label>
+                <textarea id="additional_comments" name="additional_comments" rows="4" cols="48"></textarea>
+                <br><br> 
+        
+                <button class="reg-btn" type="submit">Submit</button>
+            </form>
+        </article>
+    </section>
+
+    <script src="forms.js"></script>
+</body>
+</html>
